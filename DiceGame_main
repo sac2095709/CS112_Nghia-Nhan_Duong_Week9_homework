@@ -1,0 +1,24 @@
+/**
+ * @author Nghia-Nhan D DUong
+ *         Week 9 Homework Dice Game
+ */
+
+package week9homeworkdicegame;
+
+public class Week9HomeworkDICEGAME {
+
+ public static void main(String[] args) {
+        JavaDiceGame game = new JavaDiceGame();
+        game.setNumOfDice();
+        game.setNumOfBounces();
+        game.createDices();
+        while (game.play) {
+            game.throwDices();
+            game.setPlayerGuess();
+            game.playGame();
+            game.playAgain();
+        }
+        game.printHistory();
+
+    }
+}
